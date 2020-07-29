@@ -1,33 +1,145 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Studio</title>
+    <title>My resume</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- шапка страницы -->
-    <header>
-        <h1>Web Studio</h1>
-        <nav></nav>
-        <ul>
-            <li><a href="Студия"></a>Студия</li>
-            <li>Портфолио</li>
-            <li>Контакты</li>
-        </ul>
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <img src="./images/smartphone.png" alt="сматрфон">
-        <a href="tel:+380961111111">+38 096 111 11 11</a>
-        </nav>
-    </header>
-<!-- основная информация -->
-    <main>
-      <h1>Эффективные решения <br />
-          для вашего бизнеса
-      </h1>
-      <button>Заказать услугу</button>
-    </main>
-    <footer></footer>
+      <!-- main container -->
+    <div class="wrapper"> 
+       <div>
+        <aside class="sidebar">
+        <img class="my-photo" src="./img/photo.jpg" alt="My Photo">
+      
+            <!-- Contacts container -->
+            <div class="contacts-container">
+                <h3 class="contacts-title">Contacts</h3>
+            <div>
+                <span class="contacts-link-type">C:</span> 
+                <a class="contacts-link" href="tel:380633199195">+38 063 319 91 95</a> 
+            </div>
+            <div>
+                <span class="contacts-link-type">E:</span> 
+                <a class="contacts-link" href="mailto:gosusosed@gmail.com">gosusosed@gmail.com</a> 
+            </div>
+            </div>
+
+             <!-- Tech skills container -->  
+             <div class="tech-skills-container">
+            <h3 class="tech-skills-title">Tech skills</h3>
+            <ul>
+                <li class="tech-skill-item"><span class="tech-skills-text">HTML5</span></li>
+                <li class="tech-skill-item"><span class="tech-skills-text">CSS3</span></li>
+                <li class="tech-skill-item"><span class="tech-skills-text">GIT</span></li>
+                <li class="tech-skill-item"><span class="tech-skills-text">JavaScript (study in progress)</span></li>
+                <li class="tech-skill-item"><span class="tech-skills-text">React.js (study in progress)</span></li>
+                <li class="tech-skill-item"><span class="tech-skills-text">Node.js (study in progress)</span></li>
+                <li class="tech-skill-item"><span class="tech-skills-text">React Native (study in progress)</span></li>    
+            </ul> 
+             </div>
+       
+            <!-- Soft skills container-->
+            <div class="soft-skills-container">
+             <h3 class="soft-skills-title">Soft skills</h3>
+             <ul>
+                <li class="soft-skill-item"><span class="soft-skill-text">Scrum</span></li>
+                <li class="soft-skill-item"><span class="soft-skill-text">Agile</span></li>
+                <li class="soft-skill-item"><span class="soft-skill-text">GTD</span></li>
+                <li class="soft-skill-item"><span class="soft-skill-text">Teamwork</span></li>
+             </ul>
+            </div>
+        </aside>
+       </div>
+
+      <!-- about me container -->
+      <div class="about-me-container">
+            <!-- about me info -->
+            <div class="info-container">
+             <h2 class="profession">Junior Front-End Developer</h2>  
+             <h1 class="name">Serhii Prokopchuk</h1>
+             <p class="description">I am living in Kiev. 
+                Currently I am working at JSC UKRSIBBANK but i want to change my job and work in the IT industry.
+                Now I am studying the course for FullStack Developer(Front-End and Back-End) at GoIT company.
+            </p>
+            </div>
+        
+            <!-- Projects container -->
+            <div class="projects-container">
+            <h3 class="about-me-title">Projects</h3>
+            <ol>
+               <li class="projects-item"> 
+                   <a class="projects-link" href="https://gosusosed.github.io/goit-markup-hw-04/" target="_blank">https://gosusosed.github.io/goit-markup-hw-04/</a>
+                   <span class="dots">........in progress........</span>
+                   <span> <b>[</b> <span class="tech-name">HTML5, CSS3</span> <b>]</b> </span>
+               </li>     
+             </ol>
+            </div>
+
+          <!-- work experiance -->
+          <div>
+            <h3 class="about-me-title">Work Experience</h3>
+
+            <!-- company 1 -->
+            <div>
+            <h4 class="profession-title">Senior personal financial consultant of small and medium business in <span class="name-company"> JSC UKRSIBBANK</span> </h4>
+            <span class="work-time">
+                September 2019 - up to now <span class="profession-divider">|</span> Ukraine
+            </span>
+
+            <ul class="profession-duties">
+                <li class="profession-duties-item">Working with a premium clients - individual customers, small and medium business customers.</li>
+                <li class="profession-duties-item">Deputy the Head of branch. Training new employees.</li>
+                <li class="profession-duties-item">Sales plane implementation.</li>
+                <li class="profession-duties-item">Opening company accounts, attracting - deposits, loans, cards(debit and credit). Working with import and export.</li>
+                <li class="profession-duties-item">Testing a new bank customer.</li>
+            </ul>
+
+            </div> 
+
+            <!-- company 2 -->
+            <div>
+                <h4 class="profession-title">Personal financial consultant in <span class="name-company"> JSC UKRSIBBANK</span> </h4>
+                <span class="work-time">
+                    November 2016 - August 2019 <span class="profession-divider">|</span> Ukraine
+                </span>
+    
+                <ul class="profession-duties">
+                    <li class="profession-duties-item">Was working with a clients - individual customers, small and medium business customers.</li>
+                    <li class="profession-duties-item">Was deputing the Head of branch. Was training new employees.</li>
+                    <li class="profession-duties-item">Sales plane implementation.</li>
+                    <li class="profession-duties-item">Was opening company accounts, attracting - deposits, cards(debit and credit). Was working with export.</li>
+                </ul>
+    
+              </div>
+          
+            <!-- company 3 -->
+            <div>
+                <h4 class="profession-title">Financial consultant in <span class="name-company"> JSC UKRSIBBANK</span> </h4>
+                <span class="work-time">
+                    October 2015 - October 2016 <span class="profession-divider">|</span> Ukraine Kiev
+                </span>
+    
+                <ul class="profession-duties">
+                    <li class="profession-duties-item">Was working with a clients - individual customers.</li>
+                    <li class="profession-duties-item">Sales plane implementation.</li>
+                    <li class="profession-duties-item">Was opening and attracting - deposits, loans, cards(debit and credit).</li>
+                </ul>
+    
+              </div>
+          </div>
+            <!-- Education -->
+            <div>
+                <h3 class="about-me-title">Education</h3>
+                <p class="name-company">Kharkiv National University of V. N. Karazina</p>
+                <p class="facultet">Finance and credit</p>
+                <span class="work-time">
+                    September 2010 - February 2016 <span class="profession-divider">|</span> Ukraine Kharkov
+                </span>
+            </div>
+        </div>
+    </div> 
 </body>
 </html>
